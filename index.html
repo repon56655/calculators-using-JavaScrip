@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Calculator Using JavaScript</title>
+
+    <!-- BootStrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-group text-center">
+                    <div class="card bg-success text-white">
+
+                        <!-- Age Calculator -->
+
+                        <div class="card-body">
+                            <h5 class="card-title">Age Calculator</h5>
+                            
+                            <table class="table text-white">
+                                <thead>
+                                  <tr>
+                                    <th colspan="2" scope="col">Year</th>
+                                    <th scope="col">Month</th>
+                                    <th scope="col">Date</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Birthdate</th>
+                                    <td><input id="byear" class="form-control inputs" type="number" placeholder="Year"></td>
+                                    <td><input id="bmonth" class="form-control inputs" type="number" placeholder="Month"></td>
+                                    <td><input id="bdate" class="form-control inputs" type="number" placeholder="Date"></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Calculation Date</th>
+                                    <td><input id="cyear" class="form-control inputs" type="number"></td>
+                                    <td><input id="cmonth" class="form-control inputs" type="number"></td>
+                                    <td><input id="cdate" class="form-control inputs" type="number"></td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                            <input class="btn w-50 btn-primary fw-bolder" type="button" value="Get Result"  onclick="calculation()">
+
+                            <input class="btn w-25 btn-warning fw-bolder" type="button" value="Reset" onclick="clear_inputs()">
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <!-- BMI Calculator -->
+
+                    <div class="card bg-success text-white">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">BMI Calculator</h5>
+                            <table class="table text-white">
+                                <thead>
+                                  <tr>
+                                    <th  colspan="2"  scope="col">Weight</th>
+                                    <th  colspan="2" scope="col">Height</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td colspan="2" ><input id="weight" placeholder="Weight" class="form-control input1" type="number"></td>
+                                    <td><input id="heightInFoot" placeholder="Foot" class="form-control input1" type="number"></td>
+                                    <td><input id="heightInInchi" placeholder="Inchi" class="form-control input1" type="number"></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="4"><input id="result" class="form-control input1" type="text"></td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                            <input class="btn w-50 btn-primary fw-bolder" type="button" value="Get Result" onclick="bmi()">
+
+                            <input class="btn w-25 btn-warning fw-bolder" type="button" value="Reset"  onclick="clear_inputs1()">
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="card bg-success text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Square Calculator</h5>
+                            <td  ><input id="firstVal" placeholder="Enter Your Input Here" class="form-control input2 text-center" type="number"></td>
+                            <br><br>
+                            <td  ><input id="squareResult" placeholder="Result" class="form-control input2 text-center" type="number"></td>
+                        </div>
+                        <div class="card-footer">
+                            <input class="btn w-50 btn-primary fw-bolder" type="button" value="Get Result" onclick="square()">
+
+                            <input class="btn w-25 btn-warning fw-bolder" type="button" value="Reset" onclick="clear_input2()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
