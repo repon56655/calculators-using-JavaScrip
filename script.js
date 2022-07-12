@@ -209,3 +209,239 @@ function clear_input2(){
     	input.value=' ';
     }
   }
+
+
+  
+// ====================
+// (A+B)^2 Calculator
+// ====================
+
+function aplusb_wholeSquare(){
+
+    var _a = parseInt(document.getElementById("AValue").value);
+    var _b = parseInt(document.getElementById("BValue").value);
+
+    if( _a < 1 || _b < 1){
+        alert("Invalid Number");
+    }
+    else {
+        _a = (_a + _b)*(_a + _b);
+        
+        document.getElementById("aplusb_wholeSquare_result").innerHTML = "Answer is: " + _a;
+    }
+}
+
+
+
+// Reset Function
+
+function clear_input4(){
+    inputs=document.getElementsByClassName('input4')
+    for(input of inputs){
+    	input.value=' ';
+    }
+  }
+
+
+   
+// ====================
+// (A+B)^3 Calculator
+// ====================
+
+function aplusb_wholeCube(){
+
+    var _a = parseInt(document.getElementById("A3Value").value);
+    var _b = parseInt(document.getElementById("B3Value").value);
+
+    if( _a < 1 || _b < 1){
+        alert("Invalid Number");
+    }
+    else {
+        _a = (_a + _b)*(_a + _b)*(_a + _b);
+        
+        document.getElementById("aplusb_wholeCube_result").innerHTML = "Answer is: " + _a;
+    }
+}
+
+
+
+// Reset Function
+
+function clear_input5(){
+    inputs=document.getElementsByClassName('input5')
+    for(input of inputs){
+    	input.value=' ';
+    }
+  }
+
+  
+   
+// ====================
+// Prime Number Checker
+// ====================
+
+function randp_checker(){
+
+    var _a = parseInt(document.getElementById("primeValue1").value);
+    var _b = parseInt(document.getElementById("primeValue2").value);
+
+
+    if( _a <= 0 || _b <= 0 ){
+        alert("Invalid Number");
+    }
+    else{
+        var _r = (_a/_b);
+        var _p = (_a*_b);
+
+        document.getElementById("randp1").innerHTML = "Resistance is: " + _r;
+        document.getElementById("randp2").innerHTML = "Power is: " + _p;
+ 
+    }
+    
+}
+
+
+
+// Reset Function
+
+function clear_input6(){
+    inputs=document.getElementsByClassName('input6')
+    for(input of inputs){
+    	input.value=' ';
+    }
+  }
+
+
+
+// ====================
+// Currency Converter
+// ====================
+
+function currency_convert_function(){
+
+    var _a = document.getElementById("mySelect1").value;
+    var _b = document.getElementById("mySelect2").value;
+    var _c = parseInt(document.getElementById("currency_value").value);
+
+
+    if( _a == "USD" && _b == "BDT" ){
+        
+        var _cal = (_c * 94.20);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " USD = " + _cal_fixed + " BDT";
+    }
+    else if( _a == "CAD" && _b == "BDT" ){
+        
+        var _cal = (_c * 72.23);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " CAD = " + _cal_fixed + " BDT";
+    }
+    else if( _a == "EURO" && _b == "BDT" ){
+        
+        var _cal = (_c * 94.23);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " EURO = " + _cal_fixed + " BDT";
+    }
+    else if( _a == "BDT" && _b == "BDT" ){
+        
+        var _cal = (_c * 1);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " BDT = " + _cal_fixed + " BDT";
+    }
+
+    if( _a == "USD" && _b == "USD" ){
+        
+        var _cal = (_c * 1);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " USD = " + _cal_fixed + " USD";
+    }
+    else if( _a == "CAD" && _b == "USD" ){
+        
+        var _cal = (_c * 0.77);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " CAD = " + _cal_fixed + " USD";
+    }
+    else if( _a == "EURO" && _b == "USD" ){
+        
+        var _cal = (_c * 0.982095);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " EURO = " + _cal_fixed + " USD";
+    }
+    else if( _a == "BDT" && _b == "USD" ){
+        
+        var _cal = (_c * 0.011);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " BDT = " + _cal_fixed + " USD";
+    }
+
+
+    if( _a == "USD" && _b == "CAD" ){
+        
+        var _cal = (_c * 1.30);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " USD = " + _cal_fixed + " CAD";
+    }
+    else if( _a == "CAD" && _b == "CAD" ){
+        
+        var _cal = (_c * 1);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " CAD = " + _cal_fixed + " CAD";
+    }
+    else if( _a == "EURO" && _b == "CAD" ){
+        
+        var _cal = (_c * 1.31);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " EURO = " + _cal_fixed + " CAD";
+    }
+    else if( _a == "BDT" && _b == "CAD" ){
+        
+        var _cal = (_c * 0.014);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " BDT = " + _cal_fixed + " CAD";
+    }
+
+    if( _a == "USD" && _b == "EURO" ){
+        
+        var _cal = (_c * 0.982095);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " USD = " + _cal_fixed + " EURO";
+    }
+    else if( _a == "CAD" && _b == "EURO" ){
+        
+        var _cal = (_c * 0.77);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " CAD = " + _cal_fixed + " EURO";
+    }
+    else if( _a == "EURO" && _b == "EURO" ){
+        
+        var _cal = (_c * 1);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " EURO = " + _cal_fixed + " EURO";
+    }
+    else if( _a == "BDT" && _b == "EURO" ){
+        
+        var _cal = (_c * 0.011);
+        var _cal_fixed = _cal.toFixed(2);
+        document.getElementById("currency_result").innerHTML = _c + " BDT = " + _cal_fixed + " EURO";
+    }
+    
+}
+
+// Reset Function
+
+function clear_input7(){
+    inputs=document.getElementsByClassName('input7')
+    for(input of inputs){      
+    	input.value=' ';
+    }
+    var x = document.getElementById("input7");
+        x.style.display = "none";
+  }
+
+
+
+
+
+
+
+
